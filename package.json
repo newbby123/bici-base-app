@@ -1,0 +1,48 @@
+{
+  "name": "bici-base-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest",
+    "postinstall": "rm ./node_modules/react-native/local-cli/core/__fixtures__/files/package.json"
+  },
+  "dependencies": {
+    "@expo/react-native-action-sheet": "github:expo/react-native-action-sheet",
+    "antd-mobile": "^2.1.8",
+    "axios": "^0.18.0",
+    "compare-versions": "^3.1.0",
+    "react": "16.3.1",
+    "react-native": "0.52.1",
+    "react-native-animatable": "^1.2.4",
+    "react-native-code-push": "^5.3.2",
+    "react-native-vector-icons": "^4.6.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "redux-logger": "^3.0.6",
+    "redux-persist": "^5.9.1",
+    "redux-thunk": "^2.2.0"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.3",
+    "babel-jest": "22.4.3",
+    "babel-plugin-import": "^1.7.0",
+    "babel-preset-react-native": "4.0.0",
+    "jest": "22.4.3",
+    "react-test-renderer": "16.3.1",
+    "standard": "^11.0.1"
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "standard": {
+    "ignore": [
+      "android",
+      "ios"
+    ],
+    "parser": "babel-eslint",
+    "globals": [
+      "__DEV__"
+    ]
+  }
+}
